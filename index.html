@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laiba Sementic Portfolio</title>
+
+<style>
+    :root {
+        --primary: #c8b6ff;
+        --secondary: #fdc1fd;
+        --accent: #bde0fe;
+        --text: #ffffff;
+        --bg: #daedff;
+        --card-bg: #c8bbee;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);                
+        line-height: 1.6;
+    }
+
+    header {
+    background: #c8b6ff;
+    padding: 1.2rem 8%;
+    display: flex;
+    justify-content: space-between; /* left & right */
+    align-items: center;
+}
+
+/* Logo (H1) */
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Remove default list style */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #f8f9fa;
+    opacity: 0.8;
+}
+
+    section {
+        padding: 3rem 10%;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: #6c63ff;
+    }
+
+    .card {
+        background: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        margin-bottom: 1.5rem;
+    }
+
+    /* Center the whole skills section */
+#skills {
+    text-align: center;
+    color: #6c63ff;
+}
+
+/* Center the card container */
+#skills .card {
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Style each skill */
+.skill {
+    background: #bde0fe;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input, textarea {
+        padding: 0.8rem;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    button {
+        padding: 0.8rem;
+        border: none;
+        border-radius: 8px;
+        background: var(--secondary);
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background: var(--primary);
+        color: white;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        section {
+            padding: 2rem 5%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Laiba Kaimkhani</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <article>
+        <h2>About Me</h2>
+        <div class="card">
+            <p>Full Stack Web Developer | MERN Stack Enthusiast</p>
+            <p>I build modern, responsive and animated web applications.</p>
+    <p>Crafting elegant digital experiences with modern web technologies.</p>
+    <p>Specializing in the MERN stack while exploring Python frameworks and diving deep into AI/ML innovations.</p>
+        </div>
+    </article>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <article class="card">
+        <h3>Task Manager</h3><br>
+        <p>Using HTML, CSS, Javascript..</p>
+        <a href="https://github.com/lkaimkhani048-cloud/TASK-MANAGER" target="_blank" class="github-btn">GitHub</a>
+    </article>
+
+    <article class="card">
+        <h3>Weather App</h3><br>
+        <p>Make App Using APIs.</p>
+        <a href="https://github.com/lkaimkhani048-cloud/WeatherApp-Project" target="_blank" class="github-btn">GitHub</a>
+    </article>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">MongoDB</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" required>
+
+            <label>Message</label>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Laiba Kaimkhani | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
